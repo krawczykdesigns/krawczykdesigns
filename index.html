@@ -1,132 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>David Krawczyk</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-  <script type="text/javascript">
-  function FocusOnInput()
-  {
-       document.getElementById(">").focus();
-  }
-  </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<style>
+    <title>David Krawczyk</title>
 
-/*form*/
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-*:focus {
-    outline: none;
-}
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Oswald" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-    border: none;
-}
-/*end form*/
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
 
-  .affix {
-      bottom: 5%;
-  }
-
-  .fill {
-    width:100%;
-    height:100%;
-    background-position:center;
-    background-size:cover;
-  }
-
-/*Nav*/
-
-
-#About {
-    min-height: 100%;
-    background-color: #fff;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 13px; font-style: normal; }
-
-/*Project Description Spacing*/
-
-.description {
-    margin-top:40%;
-    margin-bottom:5%;
-}
-
-  @media screen and (max-width: 810px) {
-    #section102, #section103, #section2, #section3, #section41, #section42  {
-        margin-left: 100px;
-    }
-  }
-  a:link {text-decoration: none}
-  a:visited {text-decoration: none}
-  a:active {text-decoration: none}
-  a:hover {text-decoration: none}
-
-/*Button*/
-section.border button {
-  color: #6496c8;
-  background: rgba(0,0,0,0);
-  border: solid 2px #6496c8;
-}
-
-/*Interaction
-section.border button:hover,
-section.border button.hover {
-  border-color: #346392;
-  color: #346392;
-}
-section.border button:active,
-section.border button.active {
-  border-color: #27496d;
-  color: #27496d;
-}*/
-/*Button End*/
-
-</style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
 
 </head>
 
-<body onload="FocusOnInput()" data-spy="scroll" data-target="#myScrollspy" data-offset="5">
+<body id="page-top" class="index">
 
-  <!--Landing Page -->
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"></a>
+            </div>
 
-  <!--Mobile Nav-->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="mt-4 intro-heading">David Krawczyk</div>
+                <div class="intro-lead-in">Industrial Designer</div>
+                <!--<a href="#portfolio" class="page-scroll btn btn-xl"></a>-->
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/legacy.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Legacy</h4>
+                        <p class="text-muted">Smartphone</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/talky.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Talky</h4>
+                        <p class="text-muted">Smart Tracker</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/reyn.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Reyn</h4>
+                        <p class="text-muted">Hydration Tracker</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/komfy.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Komfy</h4>
+                        <p class="text-muted">Smart Home</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/smartwatch-iso.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Integre</h4>
+                        <p class="text-muted">Smart Watch</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/rayo.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Rayo</h4>
+                        <p class="text-muted">Tablet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                        <p class="text-muted"> David Krawczyk is an industrial designer based in New York City. He takes interest in the design of every day objects. Side projects often include repurposing products to save them from the landfill. Previously working at a consumer electronics design consultancy in Taipei, Taiwan, he has a working knowledge of design for mass manufacture. He holds a degree in Industrial Design from Pratt Institute.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-<!--About-->
-    <div class="row" id="About"> <div class="col-sm-7 col-sm-offset-2"
-    style="margin-top:20%; margin-bottom:24%; margin-left:10%; color:#000;"> 
-    David Krawczyk </br>
-<i>Product Designer</i></br></br>
 
-// info@krawczykdesigns.com </br>
-// Brooklyn, New York</br></br>
 
-    <form id="theForm">
-      >
-        <input type="text" placeholder="" style="background-color:transparent;border:0px solid white;" id='>'/>
-        <input type='submit'/>
-    </form>
-    <script type="text/javascript">
-    var theForm = document.getElementById('theForm');
-    var theInput = document.getElementById('>');
 
-    $('input[type=submit]').hide();
+<!--Contact-->
+  <div class="bg-light-gray row" id="contact">
+      <div class="col-sm-9 col-sm-offset-2" style="margin-top:20%;margin-bottom:20%;color:#000;">
+      <h2>Contact</h2><br><br><br>
 
-    theForm.onsubmit = function (e){
-        location = "/"
-                                  + encodeURIComponent(theInput.value+".html");
-        return false;
-    }
-    </script>
+      <script type="text/javascript">
 
-</p>
-    </div> </div>
+      (function(e,t){"function"==typeof define&&define.amd?define(t):"object"==typeof module&&module.exports?module.exports=t():e.H5F=t()})(this,function(){var e,t,a,i,n,r,l,s,o,u,d,c,v,p,f,m,b,h,g,y,w,C,N,A,E,$,x=document,k=x.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder",onSubmit:Function.prototype,onInvalid:Function.prototype};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var s=0,o=e.length;o>s;s++)l(e[s]);else l(e)},l=function(a){var i,r=a.elements,l=r.length,c=!!a.attributes.novalidate;if(g(a,"invalid",o,!0),g(a,"blur",o,!0),g(a,"input",o,!0),g(a,"keyup",o,!0),g(a,"focus",o,!0),g(a,"change",o,!0),g(a,"click",u,!0),g(a,"submit",function(i){return e=!0,t||c||a.checkValidity()?(n.onSubmit.call(a,i),void 0):(w(i),void 0)},!1),!v())for(a.checkValidity=function(){return d(a)};l--;)i=!!r[l].attributes.required,"fieldset"!==r[l].nodeName.toLowerCase()&&s(r[l])},s=function(e){var t=e,a=h(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,l=/^(input|keyup)$/i,s=r.test(n.type)?n.type:n.pattern?n.pattern:!1,o=p(t,s),u=m(t,"step"),v=m(t,"min"),b=m(t,"max"),g=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return d.call(this,t)},t.setCustomValidity=function(e){c.call(t,e)},t.validity={valueMissing:a,patternMismatch:o,rangeUnderflow:v,rangeOverflow:b,stepMismatch:u,customError:g,valid:!(a||o||u||v||b||g)},n.placeholder&&!l.test(i)&&f(t)},o=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,l=/^(checkbox|radio)$/i,u=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||s(t),t.validity.valid&&(""!==t.value||l.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&u&&(y(t.form,"keyup",o,!0),u=!1))},d=function(t){var a,i,r,l,s,u=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var d=0,c=a.length;c>d;d++)i=a[d],r=!!i.attributes.disabled,l=!!i.attributes.required,s=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&!r&&(l||s&&l)&&(o(i),i.validity.valid||u||(e&&i.focus(),u=!0,n.onInvalid.call(t,i)));return!u}return o(t),t.validity.valid},c=function(e){var t=this;t.validationMessage=e},u=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(k,"validity")&&E(k,"checkValidity")},p=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},f=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,l=/^password$/i,s=!!("placeholder"in k);s||!r.test(e.nodeName)||l.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,g(e.form,"submit",function(){i="submit",f(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),l=(r-a)%n;return h(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==l:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},b=function(e){var t=!!e.attributes.required;return t?h(e):!1},h=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},g=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
 
+              </script>
+      <link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/oembed?url=https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform&amp;format=xml">
+      <meta property="og:title" content="Contact"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform?usp=embed_facebook"><meta property="og:image" content="https://lh5.googleusercontent.com/gaiHbKOZDpEtHbiP3FXF-ac-d1baOMj1bD8gOhslUHoNMO0IbIWNADCxn2i2aDEAkLQ=w1200-h630-p"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="player"><meta name="twitter:title" content="Contact"><meta name="twitter:url" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform?usp=embed_twitter"><meta name="twitter:image" content="https://lh5.googleusercontent.com/gaiHbKOZDpEtHbiP3FXF-ac-d1baOMj1bD8gOhslUHoNMO0IbIWNADCxn2i2aDEAkLQ=w435-h251-p-b1-c0x00999999"><meta name="twitter:player:width" content="435"><meta name="twitter:player:height" content="251"><meta name="twitter:player" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform?embedded=true&amp;usp=embed_twitter"><meta name="twitter:description" content="Google Drive"><meta name="twitter:site" content="@googledocs">
+      </head>
+      <body dir="ltr" class="ss-base-body"><div itemscope itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="Contact">
+
+
+      <meta itemprop="url" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform">
+      <meta itemprop="embedUrl" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform?embedded=true">
+      <meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png">
+
+
+      <div class="ss-form-container"><div class="ss-header-image-container"><div class="ss-header-image-image"><div class="ss-header-image-sizer"></div></div></div>
+      <div class="ss-top-of-page"><div class="ss-form-heading">
+
+      <div class="ss-required-asterisk" aria-hidden="true"></div></div></div>
+      <script type="text/javascript">var submitted=false;</script>
+
+      <div class="ss-form">
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+    onload="if(submitted) {window.location='submitted.html#contact';}"></iframe>
+          <form action="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/formResponse" method="post" target="hidden_iframe"
+    onsubmit="submitted=true;">
+
+      <ol role="list" class="ss-question-list" style="padding-left: 0">
+      <div class="ss-form-question errorbox-good" role="listitem">
+      <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+      <label class="ss-q-item-label" for="entry_1062613887"><div class="ss-q-title" style="font-family: archivo narrow;">Name
+      <label for="itemView.getDomIdToLabel()" aria-label="(Required field)">>>></label>
+      <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+      <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+      <input type="text" style="background-color:transparent;border:0px solid white;" name="entry.1062613887" value="" class="ss-q-short" id="entry_1062613887" dir="auto" aria-label="Name  " aria-required="true" required="" title="">
+      <div class="error-message" id="1504828486_errorMessage"></div>
+      </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+      <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+      <label class="ss-q-item-label" for="entry_1321382891"><div class="ss-q-title" style="font-family: archivo narrow;">Email
+      <label for="itemView.getDomIdToLabel()" aria-label="(Required field)">>>></label>
+      <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+      <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+      <input type="text" style="background-color:transparent;border:0px solid white;" name="entry.1321382891" value="" class="ss-q-short" id="entry_1321382891" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
+      <div class="error-message" id="775193627_errorMessage"></div>
+      </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+      <div dir="auto" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
+      <label class="ss-q-item-label" for="entry_418845665"><div class="ss-q-title" style="font-family: archivo narrow;">Message
+      <label for="itemView.getDomIdToLabel()" aria-label="(Required field)">>>></label>
+      <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+      <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+      <textarea name="entry.418845665" rows="8" cols="0" class="ss-q-long" style="background-color:transparent;border:0px solid white; height: 50px; width: 25%;;" id="entry_418845665" dir="auto" aria-label="Message  " aria-required="true" required=""></textarea>
+      <div class="error-message" id="1122367916_errorMessage"></div>
+      </div></div></div>
+      <input type="hidden" name="draftResponse" value="[,,&quot;-3613738936152270194&quot;]
+      ">
+      <input type="hidden" name="pageHistory" value="0">
+      <input type="hidden" name="fvv" value="0">
+      <input type="hidden" name="fbzx" value="-3613738936152270194">
+      <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+      <input type="submit" name="submit" value="Send" id="ss-submit" class="border" style="
+        color: #6496c8;
+        font-family: archivo narrow;
+        background: rgba(0,0,0,0);
+        border: solid 2px #6496c8;">
+      </tr></tbody></table></div></ol></form></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-72052219-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <span class="copyright">Copyright. &copy; All Rights Reserved. David Krawczyk. 2017</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Legacy</h2>
+                                <p class="item-intro text-muted">Smart Phone</p>
+                                <strong>Design Brief</strong><br> Design a low cost cell phone that has qualities to  differentiate it from other phones on the market. <br><strong><br>Role</strong><br>Research market trends, sketching, interact with mechanical engineer for placement, 2D renderings, 3D modeling, CMF specification, oversee model making. </p>                                    
+                                <img class="img-responsive img-centered" src="img/portfolio/legacy.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/legacy-2.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/legacy-3.png" alt="">                   
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Talky</h2>
+                                <p class="item-intro text-muted">Smart Tracker</p><br>
+                                <strong>Design Brief</strong><br>Develop use cases for iBeacon technology and create a low cost product that can be attached to objects by several means. <br><br><strong>Role</strong><br>Market research, user experience and interaction, sketches, 2D rendering, 3D modeling and rendering, research and source vendors for manufacture.</p>  
+                                <img class="img-responsive img-centered" src="img/portfolio/talky.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/talky-2.png" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Reyn</h2>
+                                <p class="item-intro text-muted">Hydration Tracker</p>
+                                <strong>Design Brief</strong><br>Develop use cases for iBeacon technology and create a low cost product that can be attached to objects by several means. <br><br><strong>Role</strong><br>Market research, user experience and interaction, sketches, 2D rendering, 3D modeling and rendering, research and source vendors for manufacture.</p>  
+                                <img class="img-responsive img-centered" src="img/portfolio/reyn.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/reyn-2.png" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Komfy</h2>
+                                <p class="item-intro text-muted">Smart Home Switch</p>
+                                <strong>Design Brief</strong><br>Design a smart switch that incorporates a camera and proximity sensor. <br><br><strong>Role</strong><br>Market research, user experience and interaction, sketches, 2D rendering, 3D modeling and rendering.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/komfy.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/komfy-2.png" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Integre</h2>
+                                <p class="item-intro text-muted">Smart Watch</p>
+                                <strong>Design Brief</strong><br>Develop a smartwatch that features the latest in manufacturing techniques.<br><br><strong>Role</strong><br>Market and manufacturing research, concept development, sketches, 2D rendering, 3D modeling and rendering.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/smartwatch-ortho.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/smartwatch-iso.png" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Rayo</h2>
+                                <p class="item-intro text-muted">Tablet</p>
+                                <strong>Design Brief</strong><br>Design a low cost tablet featuring elements to give it a sleek appearance.<br><br><strong>Role</strong><br>Research market trends, sketching, interact with mechanical engineer for placement, 2D renderings, 3D modeling, CMF specification.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/rayo.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/rayo-2.png" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
 
 </body>
+
 </html>
