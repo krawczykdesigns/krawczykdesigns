@@ -49,49 +49,277 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <a class="navbar-brand" href="#">DAVID KRAWCZYK | Industrial Designer</a  >
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">Work</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+                    </li>-->
+                    <li>  <a class="page-scroll dropdown arrow dropdown-toggle" href="#contact" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    CONTACT <span class="caret"></span>
+  </a></li>
+
+<script>
+$(document).ready(function(){
+  $(".dropdown").on("hide.bs.dropdown", function(){
+    $(".btn").html('Dropdown <span class="caret"></span>');
+  });
+  $(".dropdown").on("show.bs.dropdown", function(){
+    $(".btn").html('Dropdown <span class="caret caret-up"></span>');
+  });
+});
+</script>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
+
+<!--
+<p>
+
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    CONTACT
+  </button>
+</p>-->
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+<div class="bg-light-gray row" id="contact">
+      <div class="col-sm-9 col-sm-offset-2" style="margin-top:5%;margin-bottom:5%;color:#000;">
+      <h2>Contact</h2><br><br><br>
+
+      <script type="text/javascript">
+
+      (function(e,t){"function"==typeof define&&define.amd?define(t):"object"==typeof module&&module.exports?module.exports=t():e.H5F=t()})(this,function(){var e,t,a,i,n,r,l,s,o,u,d,c,v,p,f,m,b,h,g,y,w,C,N,A,E,$,x=document,k=x.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder",onSubmit:Function.prototype,onInvalid:Function.prototype};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var s=0,o=e.length;o>s;s++)l(e[s]);else l(e)},l=function(a){var i,r=a.elements,l=r.length,c=!!a.attributes.novalidate;if(g(a,"invalid",o,!0),g(a,"blur",o,!0),g(a,"input",o,!0),g(a,"keyup",o,!0),g(a,"focus",o,!0),g(a,"change",o,!0),g(a,"click",u,!0),g(a,"submit",function(i){return e=!0,t||c||a.checkValidity()?(n.onSubmit.call(a,i),void 0):(w(i),void 0)},!1),!v())for(a.checkValidity=function(){return d(a)};l--;)i=!!r[l].attributes.required,"fieldset"!==r[l].nodeName.toLowerCase()&&s(r[l])},s=function(e){var t=e,a=h(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,l=/^(input|keyup)$/i,s=r.test(n.type)?n.type:n.pattern?n.pattern:!1,o=p(t,s),u=m(t,"step"),v=m(t,"min"),b=m(t,"max"),g=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return d.call(this,t)},t.setCustomValidity=function(e){c.call(t,e)},t.validity={valueMissing:a,patternMismatch:o,rangeUnderflow:v,rangeOverflow:b,stepMismatch:u,customError:g,valid:!(a||o||u||v||b||g)},n.placeholder&&!l.test(i)&&f(t)},o=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,l=/^(checkbox|radio)$/i,u=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||s(t),t.validity.valid&&(""!==t.value||l.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&u&&(y(t.form,"keyup",o,!0),u=!1))},d=function(t){var a,i,r,l,s,u=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var d=0,c=a.length;c>d;d++)i=a[d],r=!!i.attributes.disabled,l=!!i.attributes.required,s=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&!r&&(l||s&&l)&&(o(i),i.validity.valid||u||(e&&i.focus(),u=!0,n.onInvalid.call(t,i)));return!u}return o(t),t.validity.valid},c=function(e){var t=this;t.validationMessage=e},u=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(k,"validity")&&E(k,"checkValidity")},p=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},f=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,l=/^password$/i,s=!!("placeholder"in k);s||!r.test(e.nodeName)||l.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,g(e.form,"submit",function(){i="submit",f(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),l=(r-a)%n;return h(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==l:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},b=function(e){var t=!!e.attributes.required;return t?h(e):!1},h=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},g=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+
+              </script>
+      <link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/oembed?url=https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform&amp;format=xml">
+      <meta property="og:title" content="Contact"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform?usp=embed_facebook"><meta property="og:image" content="https://lh5.googleusercontent.com/gaiHbKOZDpEtHbiP3FXF-ac-d1baOMj1bD8gOhslUHoNMO0IbIWNADCxn2i2aDEAkLQ=w1200-h630-p"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="player"><meta name="twitter:title" content="Contact"><meta name="twitter:url" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform?usp=embed_twitter"><meta name="twitter:image" content="https://lh5.googleusercontent.com/gaiHbKOZDpEtHbiP3FXF-ac-d1baOMj1bD8gOhslUHoNMO0IbIWNADCxn2i2aDEAkLQ=w435-h251-p-b1-c0x00999999"><meta name="twitter:player:width" content="435"><meta name="twitter:player:height" content="251"><meta name="twitter:player" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform?embedded=true&amp;usp=embed_twitter"><meta name="twitter:description" content="Google Drive"><meta name="twitter:site" content="@googledocs">
+      </head>
+      <body dir="ltr" class="ss-base-body"><div itemscope itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="Contact">
+
+
+      <meta itemprop="url" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform">
+      <meta itemprop="embedUrl" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform?embedded=true">
+      <meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png">
+
+
+      <div class="ss-form-container"><div class="ss-header-image-container"><div class="ss-header-image-image"><div class="ss-header-image-sizer"></div></div></div>
+      <div class="ss-top-of-page"><div class="ss-form-heading">
+
+      <div class="ss-required-asterisk" aria-hidden="true"></div></div></div>
+      <script type="text/javascript">var submitted=false;</script>
+
+      <div class="ss-form">
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+    onload="if(submitted) {window.location='submitted.html#contact';}"></iframe>
+          <form action="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/formResponse" method="post" target="hidden_iframe"
+    onsubmit="submitted=true;">
+
+      <ol role="list" class="ss-question-list" style="padding-left: 0">
+      <div class="ss-form-question errorbox-good" role="listitem">
+      <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+      <label class="ss-q-item-label" for="entry_1062613887"><div class="ss-q-title" style="font-family: archivo narrow;">Name
+      <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+      <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+      <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+      <input type="text" style="background-color:transparent;border:0px solid white;" name="entry.1062613887" value="" class="ss-q-short" id="entry_1062613887" dir="auto" aria-label="Name  " aria-required="true" required="" title="">
+      <div class="error-message" id="1504828486_errorMessage"></div>
+      </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+      <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+      <label class="ss-q-item-label" for="entry_1321382891"><div class="ss-q-title" style="font-family: archivo narrow;">Email
+      <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+      <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+      <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+      <input type="text" style="background-color:transparent;border:0px solid white;" name="entry.1321382891" value="" class="ss-q-short" id="entry_1321382891" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
+      <div class="error-message" id="775193627_errorMessage"></div>
+      </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+      <div dir="auto" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
+      <label class="ss-q-item-label" for="entry_418845665"><div class="ss-q-title" style="font-family: archivo narrow;">Message
+      <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+      <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+      <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+      <textarea name="entry.418845665" rows="8" cols="0" class="ss-q-long" style="background-color:transparent;border:0px solid white; height: 50px; width: 25%;;" id="entry_418845665" dir="auto" aria-label="Message  " aria-required="true" required=""></textarea>
+      <div class="error-message" id="1122367916_errorMessage"></div>
+      </div></div></div>
+      <input type="hidden" name="draftResponse" value="[,,&quot;-3613738936152270194&quot;]
+      ">
+      <input type="hidden" name="pageHistory" value="0">
+      <input type="hidden" name="fvv" value="0">
+      <input type="hidden" name="fbzx" value="-3613738936152270194">
+      <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+      <input type="submit" name="submit" value="Send" id="ss-submit" class="border" style="
+        color: #6496c8;
+        font-family: archivo narrow;
+        background: rgba(0,0,0,0);
+        border: solid 2px #6496c8;">
+      </tr></tbody></table></div></ol></form></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-72052219-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+    </div>
+</div>
+
     </nav>
 
     <!-- Header -->
-    <header>
+ <header>
         <div class="container">
             <div class="intro-text">
-                <div class="mt-4 intro-heading">David Krawczyk</div>
-                <div class="intro-lead-in">Industrial Designer</div>
+                <div class="mt-4 intro-heading">David Krawczyk</div><br>
+                <div class="intro-lead-in">Industrial Designer based in New York City, working with global market leading companies to develop micromobility infrastructure, consumer products and electronics from concept to launch.</div>
                 <!--<a href="#portfolio" class="page-scroll btn btn-xl"></a>-->
             </div>
         </div>
     </header>
-
+ 
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted"></h3>
+                    <!--<h2 class="section-heading">Work</h2>-->
+                    <!--<h3 class="section-subheading text-muted"></h3>-->  
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#batterykiosk" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/battery_kiosk_bike.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>User Swappable Battery Kiosk</h4>
+                        <p class="text-muted">JUMP</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#chargingdocks" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/chargingdocks.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Electric Bike Charging Dock</h4>
+                        <p class="text-muted">JUMP</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#diningtable" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/dining_table.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Walnut Dining Table</h4>
+                        <p class="text-muted">Private Client</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#diningbench" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/bench.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Walnut Dining Bench</h4>
+                        <p class="text-muted">Private Client</p>
+                    </div>
+                </div>       
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#haas-barneys" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/haasbrothers_barneys.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Haas for the Holidays</h4>
+                        <p class="text-muted">Barneys New York</p>
+                    </div>
+                </div>               
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#chc" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/chc.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Clinton Hill Co-Op Sign Restoration</h4>
+                        <p class="text-muted">Evan Eisman Company</p>
+                    </div>
+                </div>                
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#bpl" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/brooklyn_public_library.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Brooklyn Public Library Facade Prototype</h4>
+                        <p class="text-muted">Evan Eisman Company</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#ytma" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ytma.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>YouTube Music Awards</h4>
+                        <p class="text-muted">Evan Eisman Company</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#smartphone" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -100,12 +328,12 @@
                         <img src="img/portfolio/legacy.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Legacy</h4>
-                        <p class="text-muted">Smartphone</p>
+                        <h4>Smartphone</h4>
+                        <p class="text-muted">PEGA D&E</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a href="#tracker" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -114,26 +342,26 @@
                         <img src="img/portfolio/talky.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Talky</h4>
-                        <p class="text-muted">Smart Tracker</p>
+                        <h4>Smart Tracker</h4>
+                        <p class="text-muted">PEGA D&E</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="#hydration" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/reyn.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/reyn-2.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Reyn</h4>
-                        <p class="text-muted">Hydration Tracker</p>
+                        <h4>Hydration Tracker</h4>
+                        <p class="text-muted">JASTR</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <a href="#smarthome" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -142,12 +370,12 @@
                         <img src="img/portfolio/komfy.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Komfy</h4>
-                        <p class="text-muted">Smart Home</p>
+                        <h4>Smart Home</h4>
+                        <p class="text-muted">PEGA D&E</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <a href="#smartwatch" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -156,12 +384,12 @@
                         <img src="img/portfolio/smartwatch-iso.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Integre</h4>
-                        <p class="text-muted">Smart Watch</p>
+                        <h4>Smart Watch</h4>
+                        <p class="text-muted">PEGA D&E</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <a href="#tablet" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -170,8 +398,8 @@
                         <img src="img/portfolio/rayo.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Rayo</h4>
-                        <p class="text-muted">Tablet</p>
+                        <h4>Tablet</h4>
+                        <p class="text-muted">PEGA D&E</p>
                     </div>
                 </div>
             </div>
@@ -189,28 +417,125 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                        <p class="text-muted"> David Krawczyk is an industrial designer based in New York City. He takes interest in the design of every day objects. Side projects often include repurposing products to save them from the landfill. Previously working at a consumer electronics design consultancy in Taipei, Taiwan, he has a working knowledge of design for mass manufacture. He holds a degree in Industrial Design from Pratt Institute.</p>
+                        <p class="text-muted"> 
+David Krawczyk is an industrial designer of products ranging from cell phones, tablets, and connected home devices to light electric vehicle charging infrastructure. Most recently, he designed battery charging products for JUMP’s light electric vehicles. He is knowledgeable in rotational and injection molding, sheet metal forming, extrusion, stamping, and CNC operations. David has worked in various roles designing consumer products and has an innate technical aptitude in both mechanical and electrical design. As a team player, David collaborates cross functionally with all departments to achieve the best design from concept to launch. Prior to working at JUMP by Uber, he has worked for startups, small businesses, and design consultancies including PEGA Design and Engineering in Taipei, Taiwan where he started his career. 
+<br><br>
+He is fluent in Mandarin Chinese and proficient in numerous CAD programs including SolidWorks, Pro/Engineer, and Fusion 360 as well as competency in Adobe Creative Suite. David is passionate about prototyping mechanisms, finding simple creative solutions for complex problems, and improving user experience.
+
+                        </p>
                 </div>
             </div>
         </div>
     </section>
 
 
+
+
 <!--Contact-->
-  <div class="row bg-light-gray" id="contact">
+  <div class="row bg-light-gray" id="received">
       <div class="col-sm-9 col-sm-offset-2" style="margin-top:20%;margin-bottom:20%;color:#000;">
       <h2>Contact</h2><br><br><br>
-                    <h3 class="section-subheading text-muted">Submitted, thank you!</h3>
+                    <h3 class="section-subheading text-muted">Your message has been submitted, thank you!</h3>
 
       
   </div>
+
+<!--Contact
+  <div class="bg-light-gray row" id="contact">
+      <div class="col-sm-9 col-sm-offset-2" style="margin-top:20%;margin-bottom:20%;color:#000;">
+      <h2>Contact</h2><br><br><br>
+
+      <script type="text/javascript">
+
+      (function(e,t){"function"==typeof define&&define.amd?define(t):"object"==typeof module&&module.exports?module.exports=t():e.H5F=t()})(this,function(){var e,t,a,i,n,r,l,s,o,u,d,c,v,p,f,m,b,h,g,y,w,C,N,A,E,$,x=document,k=x.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder",onSubmit:Function.prototype,onInvalid:Function.prototype};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var s=0,o=e.length;o>s;s++)l(e[s]);else l(e)},l=function(a){var i,r=a.elements,l=r.length,c=!!a.attributes.novalidate;if(g(a,"invalid",o,!0),g(a,"blur",o,!0),g(a,"input",o,!0),g(a,"keyup",o,!0),g(a,"focus",o,!0),g(a,"change",o,!0),g(a,"click",u,!0),g(a,"submit",function(i){return e=!0,t||c||a.checkValidity()?(n.onSubmit.call(a,i),void 0):(w(i),void 0)},!1),!v())for(a.checkValidity=function(){return d(a)};l--;)i=!!r[l].attributes.required,"fieldset"!==r[l].nodeName.toLowerCase()&&s(r[l])},s=function(e){var t=e,a=h(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,l=/^(input|keyup)$/i,s=r.test(n.type)?n.type:n.pattern?n.pattern:!1,o=p(t,s),u=m(t,"step"),v=m(t,"min"),b=m(t,"max"),g=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return d.call(this,t)},t.setCustomValidity=function(e){c.call(t,e)},t.validity={valueMissing:a,patternMismatch:o,rangeUnderflow:v,rangeOverflow:b,stepMismatch:u,customError:g,valid:!(a||o||u||v||b||g)},n.placeholder&&!l.test(i)&&f(t)},o=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,l=/^(checkbox|radio)$/i,u=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||s(t),t.validity.valid&&(""!==t.value||l.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&u&&(y(t.form,"keyup",o,!0),u=!1))},d=function(t){var a,i,r,l,s,u=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var d=0,c=a.length;c>d;d++)i=a[d],r=!!i.attributes.disabled,l=!!i.attributes.required,s=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&!r&&(l||s&&l)&&(o(i),i.validity.valid||u||(e&&i.focus(),u=!0,n.onInvalid.call(t,i)));return!u}return o(t),t.validity.valid},c=function(e){var t=this;t.validationMessage=e},u=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(k,"validity")&&E(k,"checkValidity")},p=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},f=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,l=/^password$/i,s=!!("placeholder"in k);s||!r.test(e.nodeName)||l.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,g(e.form,"submit",function(){i="submit",f(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),l=(r-a)%n;return h(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==l:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},b=function(e){var t=!!e.attributes.required;return t?h(e):!1},h=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},g=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+
+              </script>
+      <link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/oembed?url=https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform&amp;format=xml">
+      <meta property="og:title" content="Contact"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform?usp=embed_facebook"><meta property="og:image" content="https://lh5.googleusercontent.com/gaiHbKOZDpEtHbiP3FXF-ac-d1baOMj1bD8gOhslUHoNMO0IbIWNADCxn2i2aDEAkLQ=w1200-h630-p"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="player"><meta name="twitter:title" content="Contact"><meta name="twitter:url" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform?usp=embed_twitter"><meta name="twitter:image" content="https://lh5.googleusercontent.com/gaiHbKOZDpEtHbiP3FXF-ac-d1baOMj1bD8gOhslUHoNMO0IbIWNADCxn2i2aDEAkLQ=w435-h251-p-b1-c0x00999999"><meta name="twitter:player:width" content="435"><meta name="twitter:player:height" content="251"><meta name="twitter:player" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform?embedded=true&amp;usp=embed_twitter"><meta name="twitter:description" content="Google Drive"><meta name="twitter:site" content="@googledocs">
+      </head>
+      <body dir="ltr" class="ss-base-body"><div itemscope itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="Contact">
+
+
+      <meta itemprop="url" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform">
+      <meta itemprop="embedUrl" content="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/viewform?embedded=true">
+      <meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png">
+
+
+      <div class="ss-form-container"><div class="ss-header-image-container"><div class="ss-header-image-image"><div class="ss-header-image-sizer"></div></div></div>
+      <div class="ss-top-of-page"><div class="ss-form-heading">
+
+      <div class="ss-required-asterisk" aria-hidden="true"></div></div></div>
+      <script type="text/javascript">var submitted=false;</script>
+
+      <div class="ss-form">
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+    onload="if(submitted) {window.location='submitted.html#contact';}"></iframe>
+          <form action="https://docs.google.com/forms/d/1tRQTOqW39GdHYxOLMVapOHQsdaeTPB9ihsN8LsYTEOA/formResponse" method="post" target="hidden_iframe"
+    onsubmit="submitted=true;">
+
+      <ol role="list" class="ss-question-list" style="padding-left: 0">
+      <div class="ss-form-question errorbox-good" role="listitem">
+      <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+      <label class="ss-q-item-label" for="entry_1062613887"><div class="ss-q-title" style="font-family: archivo narrow;">Name
+      <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+      <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+      <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+      <input type="text" style="background-color:transparent;border:0px solid white;" name="entry.1062613887" value="" class="ss-q-short" id="entry_1062613887" dir="auto" aria-label="Name  " aria-required="true" required="" title="">
+      <div class="error-message" id="1504828486_errorMessage"></div>
+      </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+      <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+      <label class="ss-q-item-label" for="entry_1321382891"><div class="ss-q-title" style="font-family: archivo narrow;">Email
+      <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+      <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+      <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+      <input type="text" style="background-color:transparent;border:0px solid white;" name="entry.1321382891" value="" class="ss-q-short" id="entry_1321382891" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
+      <div class="error-message" id="775193627_errorMessage"></div>
+      </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+      <div dir="auto" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
+      <label class="ss-q-item-label" for="entry_418845665"><div class="ss-q-title" style="font-family: archivo narrow;">Message
+      <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+      <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+      <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+      <textarea name="entry.418845665" rows="8" cols="0" class="ss-q-long" style="background-color:transparent;border:0px solid white; height: 50px; width: 25%;;" id="entry_418845665" dir="auto" aria-label="Message  " aria-required="true" required=""></textarea>
+      <div class="error-message" id="1122367916_errorMessage"></div>
+      </div></div></div>
+      <input type="hidden" name="draftResponse" value="[,,&quot;-3613738936152270194&quot;]
+      ">
+      <input type="hidden" name="pageHistory" value="0">
+      <input type="hidden" name="fvv" value="0">
+      <input type="hidden" name="fbzx" value="-3613738936152270194">
+      <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+      <input type="submit" name="submit" value="Send" id="ss-submit" class="border" style="
+        color: #6496c8;
+        font-family: archivo narrow;
+        background: rgba(0,0,0,0);
+        border: solid 2px #6496c8;">
+      </tr></tbody></table></div></ol></form></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-72052219-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+-->
 
 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <span class="copyright">Copyright. &copy; All Rights Reserved. David Krawczyk. 2017</span>
+                    <span class="copyright">&copy; 2020. All Rights Reserved. David Krawczyk.</span>
                 </div>
             </div>
         </div>
@@ -220,7 +545,7 @@
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
     <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="smartphone" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -234,8 +559,8 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Legacy</h2>
-                                <p class="item-intro text-muted">Smart Phone</p>
+                                <h2>Smart Phone</h2>
+                                <p class="item-intro text-muted">PEGA D&E</p>
                                 <strong>Design Brief</strong><br> Design a low cost cell phone that has qualities to  differentiate it from other phones on the market. <br><strong><br>Role</strong><br>Research market trends, sketching, interact with mechanical engineer for placement, 2D renderings, 3D modeling, CMF specification, oversee model making. </p>                                    
                                 <img class="img-responsive img-centered" src="img/portfolio/legacy.png" alt="">
                                 <img class="img-responsive img-centered" src="img/portfolio/legacy-2.png" alt="">
@@ -250,7 +575,7 @@
     </div>
 
     <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="tracker" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -263,8 +588,8 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                <h2>Talky</h2>
-                                <p class="item-intro text-muted">Smart Tracker</p><br>
+                                <h2>Smart Tracker</h2>
+                                <p class="item-intro text-muted">PEGA D&E</p><br>
                                 <strong>Design Brief</strong><br>Develop use cases for iBeacon technology and create a low cost product that can be attached to objects by several means. <br><br><strong>Role</strong><br>Market research, user experience and interaction, sketches, 2D rendering, 3D modeling and rendering, research and source vendors for manufacture.</p>  
                                 <img class="img-responsive img-centered" src="img/portfolio/talky.png" alt="">
                                 <img class="img-responsive img-centered" src="img/portfolio/talky-2.png" alt="">
@@ -278,7 +603,7 @@
     </div>
 
     <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="hydration" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -292,9 +617,9 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Reyn</h2>
-                                <p class="item-intro text-muted">Hydration Tracker</p>
-                                <strong>Design Brief</strong><br>Develop use cases for iBeacon technology and create a low cost product that can be attached to objects by several means. <br><br><strong>Role</strong><br>Market research, user experience and interaction, sketches, 2D rendering, 3D modeling and rendering, research and source vendors for manufacture.</p>  
+                                <h2>Hydration Tracker</h2>
+                                <p class="item-intro text-muted">JASTR</p>
+                                <strong>Design Brief</strong><br>Design a smart water bottle that monitors water consumption and sends data to an app on your phone. <br><br><strong>Role</strong><br>Research market trends, sketching, 2D renderings, 3D modeling, CMF specification, sourcing vendors.</p>  
                                 <img class="img-responsive img-centered" src="img/portfolio/reyn.png" alt="">
                                 <img class="img-responsive img-centered" src="img/portfolio/reyn-2.png" alt="">
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -307,7 +632,7 @@
     </div>
 
     <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="smarthome" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -321,8 +646,8 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Komfy</h2>
-                                <p class="item-intro text-muted">Smart Home Switch</p>
+                                <h2>Smart Home Switch</h2>
+                                <p class="item-intro text-muted">PEGA D&E</p>
                                 <strong>Design Brief</strong><br>Design a smart switch that incorporates a camera and proximity sensor. <br><br><strong>Role</strong><br>Market research, user experience and interaction, sketches, 2D rendering, 3D modeling and rendering.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/komfy.png" alt="">
                                 <img class="img-responsive img-centered" src="img/portfolio/komfy-2.png" alt="">
@@ -336,7 +661,7 @@
     </div>
 
     <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="smartwatch" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -350,8 +675,8 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Integre</h2>
-                                <p class="item-intro text-muted">Smart Watch</p>
+                                <h2>Smart Watch</h2>
+                                <p class="item-intro text-muted">PEGA D&E</p>
                                 <strong>Design Brief</strong><br>Develop a smartwatch that features the latest in manufacturing techniques.<br><br><strong>Role</strong><br>Market and manufacturing research, concept development, sketches, 2D rendering, 3D modeling and rendering.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/smartwatch-ortho.png" alt="">
                                 <img class="img-responsive img-centered" src="img/portfolio/smartwatch-iso.png" alt="">
@@ -365,7 +690,7 @@
     </div>
 
     <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="tablet" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -379,8 +704,8 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Rayo</h2>
-                                <p class="item-intro text-muted">Tablet</p>
+                                <h2>Tablet</h2>
+                                <p class="item-intro text-muted">PEGA D&E</p>
                                 <strong>Design Brief</strong><br>Design a low cost tablet featuring elements to give it a sleek appearance.<br><br><strong>Role</strong><br>Research market trends, sketching, interact with mechanical engineer for placement, 2D renderings, 3D modeling, CMF specification.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/rayo.png" alt="">
                                 <img class="img-responsive img-centered" src="img/portfolio/rayo-2.png" alt="">
@@ -393,7 +718,265 @@
         </div>
     </div>
 
-    <!-- jQuery -->
+        <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="batterykiosk" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>User Swapper Battery Kiosk</h2>
+                                <p class="item-intro text-muted">JUMP</p>
+                                <strong>Design Brief</strong><br>Developed ground up user swappable battery kiosk
+                                <br><br><strong>Role</strong><br>Created: system level architecture, component design, and working proof of concept prototype <br> Conducted user experience studies to validate concept, user flow, and ergonomics 
+                                <br>- Defined levels of access, IP ratings, material properties, and installation method
+                                <br>- Engineered mechanical and electrical severability, serviceability, and shedding of water and debris
+                                <br>- Collaborated cross functionally with mechanical, electrical, firmware, software, and certification teams to onboard vendors for production
+                                </p>
+                                <img class="img-responsive img-centered" src="img/portfolio/battery_kiosk_bike.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/battery.jpg" alt="">
+                                <img class="img-responsive img-centered" src="" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="chargingdocks" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Electric Bike Charging Docks</h2>
+                                <p class="item-intro text-muted">JUMP</p>
+                                <strong>Design Brief</strong><br>Lead JUMP’s electric bike charging docks from concept to mass production for national market expansion<br><br><strong>Role</strong>
+                                <br>- Component design including: PCB enclosure, wire harness, and mechanical retention of vehicle 
+                                <br>- Sourced vendors for: wire harnesses, connectors, spring clips, and outdoor flame-rated plastics 
+                                <br>- Oversaw component level and product level assembly at overseas and domestic vendors
+                                <br>- Responsible for certification of charging docks to UL standard unblocking deployment of product in cities
+                                </p>
+                                <img class="img-responsive img-centered" src="img/portfolio/chargingdocks.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/CAchargingdocks.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/chargingdock_sac.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/chargingdock_sac1.jpg" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="diningtable" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Walnut Dining Table</h2>
+                                <p class="item-intro text-muted">Private Client</p>
+                                <strong>Description</strong><br><p>An homage to Pierre Jeanneret, this solid walnut dining table was built following the same pinned mortise and tenon joinery techniques as the Chandigarh furniture. The table measures 76 w x 37.5 d x 29.5 h inches and features mitered book matched returns. Finished with pure tung oil.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/dining_table.png" alt="">
+                                <img src="img/portfolio/lumberyard.jpg" class="img-responsive" alt="">
+                                <img src="img/portfolio/glueup.jpg" class="img-responsive" alt="">
+                                <img src="img/portfolio/joint.jpg" class="img-responsive" alt="">
+                                <img src="img/portfolio/dowelpins.jpg" class="img-responsive" alt="">
+                                <img src="img/portfolio/dowelpins_joint.jpg" class="img-responsive" alt="">
+                                <img src="img/portfolio/bookmatch.jpg" class="img-responsive" alt="">                                
+                                <img class="img-responsive img-centered" src="img/portfolio/tabletop.jpg" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="diningbench" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Walnut Dining Bench</h2>
+                                <p class="item-intro text-muted">Private Client</p>
+                                <strong>Description</strong><br><p>An homage to Pierre Jeanneret, this solid walnut dining bench was built following the same pinned mortise and tenon and finger joinery techniques as the Chandigarh furniture. The bench measures 64 w x 18 d x 18 h inches and features handwoven cane seats. Finished with pure tung oil.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/bench.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/bench_prototype.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/bench_joint.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/bench_rail.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/bench_pin.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/bench_pins.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/bench_cane_underside.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/bench_cane.jpg" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="portfolio-modal modal fade" id="haas-barneys" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Haas for the Holidays</h2>
+                                <p class="item-intro text-muted">Barneys New York</p>
+                                <strong>Role</strong><br>Partnered with Creative Director to design original window and in-store graphics for national holiday campaign.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/haasbrothers_barneys.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/haas_barneys.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/barneys_staircase.jpg" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="portfolio-modal modal fade" id="chc" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Clinton Hill Co-Op Signage</h2>
+                                <p class="item-intro text-muted">Evan Eisman Company</p>
+                                <strong>Design Brief</strong><br>Refurbish original signage circa 1944<br><br><strong>Role</strong><br>Document original signage, recreate artwork, prepare technical drawings, material research, fabrication, installation</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/chc.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/chc_frame.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/chc_glass.jpg" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            <div class="portfolio-modal modal fade" id="bpl" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Brooklyn Public Library Facade Prototype</h2>
+                                <p class="item-intro text-muted">Evan Eisman Company</p>
+                                <strong>Design Brief</strong><br>Design a low cost tablet featuring elements to give it a sleek appearance.<br><br><strong>Role</strong><br>Research market trends, sketching, interact with mechanical engineer for placement, 2D renderings, 3D modeling, CMF specification.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/brooklyn_public_library.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/bpl_render.jpg" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+            <div class="portfolio-modal modal fade" id="ytma" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>YouTube Music Awards</h2>
+                                <p class="item-intro text-muted">Evan Eisman Company</p>
+                                <strong>Design Brief</strong><br>Design a low cost tablet featuring elements to give it a sleek appearance.<br><br><strong>Role</strong><br>Research market trends, sketching, interact with mechanical engineer for placement, 2D renderings, 3D modeling, CMF specification.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/ytma.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/ytma_blanks.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/ytma_machined.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/ytma_polished.jpg" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+        <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -412,3 +995,8 @@
 </body>
 
 </html>
+
+
+
+
+
